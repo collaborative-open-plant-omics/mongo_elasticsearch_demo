@@ -20,7 +20,7 @@ function search_elasticsearch(e){
             data = jQuery.parseJSON(data)
             $(data.hits.hits).each(function(key, value){
 
-                console.log(value)
+                //console.log(value)
                 $('.suggestions').append("<div>").append(value._source.firstname).append(' ').append(value._source.lastname).append('</div>')
             })
 
