@@ -5,7 +5,7 @@ Demonstration of how to integrate mongodb and elastic search
 
 - install mongodb 3.0.5
     - make sure mongodb in running in replicaset mode
-        - add --replset '<name>'
+        - add --replset "<name>"
         - go to mongo console and type 'rs.intiate()'
             - if you need to change the name of the replica set, it is necesary to delete the .local database from the mongodb instance
 
