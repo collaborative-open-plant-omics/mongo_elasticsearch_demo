@@ -1,0 +1,17 @@
+curl -XPUT 'http://localhost:9200/_river/mongodb/_meta' -d '{
+"type": "mongodb",
+"mongodb": {
+"db": "copo_mongo",
+"servers": [
+{
+"port": 27017,
+"host": "127.0.0.1"
+}
+],
+"collection": "person"
+},
+"index": {
+"name": "mongoindex",
+"type": "person"
+}
+}'
